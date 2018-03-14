@@ -20,3 +20,4 @@ newPackageJson = {
 };
 
 fs.writeFileSync(path.resolve(__dirname, '../dist/package.json'), JSON.stringify(newPackageJson, null, 4));
+fs.writeFileSync(path.resolve(__dirname, '../dist/README.MD'),fs.readFileSync(path.resolve(__dirname, '../README.MD')));

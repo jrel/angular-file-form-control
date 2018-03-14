@@ -1,6 +1,6 @@
 {
   "name": "angular-file-form-control",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Directive to convert files submitted in an input type file to base64",
   "keywords": [
     "angular",
@@ -19,8 +19,8 @@
     "transpile": "ngc",
     "package": "rollup -c scripts/rollup.config.js",
     "minify": "uglifyjs dist/bundles/module.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/amazing.umd.min.js",
-    "packageJson": "node ./scripts/package.json.generator.js",
-    "build": "npm run lint && npm run transpile && npm run package && npm run minify && npm run packageJson"
+    "copy": "node ./scripts/copy.files.js",
+    "build": "npm run lint && npm run transpile && npm run package && npm run minify && npm run copy"
   },
   "repository": {
     "type": "git",
